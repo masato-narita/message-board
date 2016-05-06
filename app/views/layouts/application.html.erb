@@ -10,9 +10,19 @@
 <body>
     <nav class="navbar">
     <div class="container">
+      
       <div class="navbar-header">
         <h1>Message Board</h1>
       </div>
+      
+<!--フラッシュメッセージ-->
+      <% if notice %>
+      <div class="alert alert-info">
+<%= notice %>
+      </div>
+<% end %>
+<!--ここまでフラッシュメッセージ-->
+      
     </div>
   </nav>
   <div class="container">
