@@ -3,31 +3,70 @@
 <head>
   <title>MessageBoard</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag('favicon.ico') %>
 </head>
-<body>
-    <nav class="navbar">
-    <div class="container">
-      
-      <div class="navbar-header">
-        <h1>Message Board</h1>
-      </div>
-    </div>
-  </nav>
+    
+    <body>
+        <!--Header-->
+        <header>
+            <div class="row">
+                <div id="logo" class="col-sm-12">
+                <!--ここにロゴ入れる-->
+                <%= image_tag 'logo.png' %>
+                </div>
+            </div>
+            
+            <div class="row">
+            <!--navはindexでdiv class="menu"に書かれた部分-->
+            <!--メニュー（ナビゲーション）としてまとまりを扱う-->
+            <nav class="col-sm-12">
+                <ul>
+                    <li><a href="https://masato-narita.github.io/index.html" >Home</a></li>
+                    <li><a href="https://masato-narita.github.io/about.html" >About</a></li>
+                    <li><a href="https://masato-narita.github.io/portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            </div>
+            
+        </header>
+        <!--Header-->
         
-<!--フラッシュメッセージ-->
-      <% if notice %>
-      <div class="alert alert-info">
-<%= notice %>
-      </div>
-<% end %>
-<!--ここまでフラッシュメッセージ-->
-      
-  
-  <div class="container">
-    <%= yield %>
-  </div>
-</body>
+        
+        <div class="container">
+            <div class="row">
+        <!--Section-->
+            
+            <h1>Message Board</h1>
+            <section>
+            <div class="col-sm-12">
+             <!--フラッシュメッセージ-->
+              <% if notice %>
+              <div class="alert alert-info">
+              <%= notice %>
+              </div>
+            <% end %>
+              <!--ここまでフラッシュメッセージ-->
+          <%= yield %>
+                                    
+            </section>
+            </div>
+            </div>
+        <!--Section-->
+        </div>
+        
+        <!--Footer-->
+            <footer>
+                <!--&copy;はコピーライトの記号がでてくる-->
+                <p>&copy; 2016 Masato Narita.</p>
+            </footer>
+        <!--Footer-->
+        
+        
+    </body>
+</html>
 </html>

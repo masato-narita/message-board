@@ -13,3 +13,73 @@
  *= require_tree .
  *= require_self
  */
+header{
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+ 
+ body{
+    /*フォントを選択*/
+    font-family: YuGothic, "游ゴシック", "メイリオ",  Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+    /*フォントサイズ*/
+    font-size: 24px;
+    width: 100%;
+    margin: 0;
+    background-image: url(glid.jpg);
+    padding-bottom: 100px;
+
+}
+
+nav {
+/*    メニューの余白の設定*/
+    margin: 0 0 5px 0;
+    padding: 10px 0;
+    background: #fff;
+/*    下線*/
+    border-bottom: 4px solid #666;
+}
+
+nav ul{
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+nav ul li {
+/*    余白　上下右0 左右20*/
+    margin: 0 0 0 20px;
+/*    inline-blockを仕様するとブロック要素もインラインの様に表示できる*/
+    display: inline-block;
+}
+
+nav ul li a {
+/*    余白*/
+    padding: 15px 10px;
+/*     リンクの下線を消す*/
+    text-decoration: none;
+/*    カラーをグレーにしてboldは太文字に*/
+    color: #999;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    text-align: center; 
+
+    /*表示位置*/
+    bottom: 0;
+    position: fixed;
+    /*93%はbodyで指定した14pxの93%ってこと*/
+    font-size: 80%;
+    background-color: #ccc;
+    color: #666;  
+}
+
+.container {
+    font-size: 12px;
+    padding: 0 0 0 20;
+/*    marginは3つなら、上、左右、下になる。autoは中央揃え*/
+    margin: 0 auto 0;
+    background-color: RGBA(255,255,255,0.9);
+}
