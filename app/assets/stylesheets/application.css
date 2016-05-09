@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+html {
+    margin: 0;
+}
+
 header{
     margin-bottom: 20px;
     width: 100%;
@@ -27,13 +31,14 @@ header{
     font-size: 24px;
     width: 100%;
     margin: 0;
-    background-image: url(glid.jpg);
     padding-bottom: 100px;
+    background-image: url(glid.jpg);
 
 }
 
 nav {
 /*    メニューの余白の設定*/
+    width: 100%;
     margin: 0 0 5px 0;
     padding: 10px 0;
     background: #fff;
@@ -77,9 +82,17 @@ footer {
 }
 
 .container {
-    font-size: 12px;
+    font-size: 20px;
     padding: 0 0 0 20;
 /*    marginは3つなら、上、左右、下になる。autoは中央揃え*/
     margin: 0 auto 0;
     background-color: RGBA(255,255,255,0.9);
+}
+
+.row{
+    margin: 0;
+}
+
+div .container{
+    padding: 0;
 }

@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -40,29 +41,32 @@
         <div class="container">
             <div class="row">
         <!--Section-->
-            
+                    <div class="col-sm-12">
             <h1>Message Board</h1>
-            <section>
-            <div class="col-sm-12">
-             <!--フラッシュメッセージ-->
-              <% if notice %>
-              <div class="alert alert-info">
-              <%= notice %>
-              </div>
-            <% end %>
-              <!--ここまでフラッシュメッセージ-->
-          <%= yield %>
-                                    
-            </section>
+                <section>
+                     <!--フラッシュメッセージ-->
+                      <% if notice %>
+                      <div class="alert alert-info">
+                      <%= notice %>
+                      </div>
+                    <% end %>
+                      <!--ここまでフラッシュメッセージ-->
+                    <%= yield %>
+                     </div>
+                </section>
+            <!--Section--> 
             </div>
-            </div>
-        <!--Section-->
         </div>
         
         <!--Footer-->
+        
             <footer>
-                <!--&copy;はコピーライトの記号がでてくる-->
-                <p>&copy; 2016 Masato Narita.</p>
+                <div class="row">
+                    <div class="col-sm-12">
+                    <!--&copy;はコピーライトの記号がでてくる-->
+                    <p>&copy; 2016 Masato Narita.</p>
+                    </div>
+                </div>
             </footer>
         <!--Footer-->
         
