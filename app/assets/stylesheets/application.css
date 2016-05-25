@@ -18,6 +18,7 @@ html {
 }
 
 header{
+
     margin-bottom: 20px;
     width: 100%;
     height: auto;
@@ -92,4 +93,8 @@ footer {
 
 div .container{
     padding: 0;
+}
+
+.col-sm-12{
+    padding-left: 0;
 }
