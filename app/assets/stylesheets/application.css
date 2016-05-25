@@ -35,38 +35,6 @@ header{
     padding-bottom: 5%;
 }
 
-nav {
-/*    メニューの余白の設定*/
-    width: 100%;
-    margin: 0 0 5px 0;
-    padding: 10px 0;
-    background: #fff;
-/*    下線*/
-    border-bottom: 4px solid #666;
-}
-
-nav ul{
-    margin: 0 0 0 10px;
-    padding: 0;
-}
-
-nav ul li {
-/*    余白　上下右0 左右20*/
-    margin: 0 0 0 20px;
-/*    inline-blockを仕様するとブロック要素もインラインの様に表示できる*/
-    display: inline-block;
-}
-
-nav ul li a {
-/*    余白*/
-    padding: 15px 10px;
-/*     リンクの下線を消す*/
-    text-decoration: none;
-/*    カラーをグレーにしてboldは太文字に*/
-    color: #999;
-    font-weight: bold;
-}
-
 footer {
     width: 100%;
     text-align: center; 
